@@ -1,7 +1,7 @@
 matrix:
   include:
       os: linux
-      arch: ppc64le
+      arch: s390x
       language: generic
 
 install: skip
