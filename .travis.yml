@@ -1,0 +1,7 @@
+arch: s390x
+os: linux  # different CPU architectures are only supported on Linux
+
+services:
+  - docker
+
+script: docker build -t miniconda3 -f Dockerfile .
