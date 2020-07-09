@@ -1,5 +1,5 @@
 arch: s390x
-os: linux  # different CPU architectures are only supported on Linux
+os: linux  # different CPU architectures are only supported on Linux, test for s390x
 
 services:
   - docker
