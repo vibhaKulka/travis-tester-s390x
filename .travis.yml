@@ -1,7 +1,10 @@
-arch: s390x
-os: linux  # different CPU architectures are only supported on Linux, test for s390x
+matrix:
+  include:
+      os: linux
+      arch: s390x
+      language: generic
 
-services:
-  - docker
-
-script: docker build -t miniconda3 -f Dockerfile .
+install: skip
+script:
+  - cd my_scripts
+  - ./check-env.sh
