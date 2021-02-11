@@ -6,5 +6,7 @@ matrix:
 
 install: skip
 script:
+  - echo $TRAVIS_ARCH
+  - echo $TRAVIS_BRANCH
   - cd my_scripts
   - ./check-env.sh
