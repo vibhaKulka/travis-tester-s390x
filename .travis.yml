@@ -4,9 +4,11 @@ matrix:
       arch: s390x
       language: generic
 
+services: docker
+
 install: skip
 script:
   - echo $TRAVIS_ARCH
   - echo $TRAVIS_BRANCH
   - cd my_scripts
-  - ./check-env.sh
+  - docker build -t testimage -f Dockerfile .
